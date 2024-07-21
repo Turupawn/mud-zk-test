@@ -1,13 +1,19 @@
 # Minimal ZK demo game with MUD
 
 * Using MUD vanilla template
-* Circom circuits, snarkjs prover
+* Circom circuits, snarkjs prover, libcircomjs poseidon hash
 * "Guess one of three numbers" game. PvE Scenario
 * The game creator (game master) hashes 3 secret numbers and post them to a SecretCommitment MUD Singleton
 * Players can submit a number to a theoretical backend (currently done locally) then the backend can prove the result (fail or success guess)
 * If the are correct, they can submit the proof on-chain and increment a Counter MUD Singleton
 * This can serve, for example for hidden treasures in a map that players can look for, also other cases
 * I can see see this play out in PvP scenarios
+
+## Important files
+
+* [Circuit](https://github.com/Turupawn/mud-zk-test/blob/master/circuits/proveWrong.circom)
+* [snarkjs proving](https://github.com/Turupawn/mud-zk-test/blob/master/packages/client/src/mud/createSystemCalls.ts#L39)
+* [contract verification](https://github.com/Turupawn/mud-zk-test/blob/master/packages/contracts/src/systems/IncrementSystem.sol#L13)
 
 ## Deploy guide
 
