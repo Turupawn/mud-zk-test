@@ -1,5 +1,7 @@
 # Minimal ZK demo game with MUD
 
+![Screenshot from 2024-07-20 23-34-42](https://github.com/user-attachments/assets/54d4a163-3c2b-4c9c-95a4-fd4804d04b18)
+
 * Using MUD vanilla template
 * Circom circuits, snarkjs prover, libcircomjs poseidon hash
 * "Guess one of three numbers" game. PvE Scenario
