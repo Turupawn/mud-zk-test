@@ -62,7 +62,7 @@ SecretCommitment.set(uint32(uint(65429856082228061903612403225861127507441690384
 
 ```bash
 mkdir ../packages/client/src/zk_artifacts
-cp proveWrong_js/proveWrong.wasm mkdir ../packages/client/src/zk_artifacts/
+cp proveWrong_js/proveWrong.wasm ../packages/client/src/zk_artifacts/
 cp proveWrong_0001.zkey ../packages/client/src/zk_artifacts/proveWrong_final.zkey
 cp verification_key.json ../packages/client/src/zk_artifacts/
 ```
