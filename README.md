@@ -23,7 +23,7 @@
 ```bash
 cd circuits
 circom proveWrong.circom --r1cs --wasm --sym
-node proveWrong_js/generate_witness.js proveWrong_js/privateKeyHasher.wasm input.json witness.wtns
+node proveWrong_js/generate_witness.js proveWrong_js/proveWrong.wasm input.json witness.wtns
 snarkjs powersoftau new bn128 12 pot12_0000.ptau -v
 snarkjs powersoftau contribute pot12_0000.ptau pot12_0001.ptau --name="First contribution" -v
 snarkjs powersoftau prepare phase2 pot12_0001.ptau pot12_final.ptau -v
